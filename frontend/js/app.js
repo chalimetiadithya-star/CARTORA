@@ -180,10 +180,7 @@ const Cartora = (function () {
                     }).join('')}
                 </div>
             `;
-                    }).join('')}
-                    ${cartCount > 0 ? `<a href="#cart" class="nav-item ${state.currentPage === 'cart' ? 'active' : ''}"><span class="nav-icon">🛒</span>Cart<span class="nav-badge">${cartCount}</span></a>` : ''}
-                </div>
-            `;
+
             const tb = document.getElementById('topbar');
             const pageNames = { home: 'Home', shop: 'Shop', orders: 'My Orders', order: 'Order Detail', product: 'Product', cart: 'Cart', delivery: 'Delivery', returns: 'Returns & Refunds', 'return': 'Start Return', warranty: 'Warranty & Repairs', 'warranty-claim': 'Warranty Claim', assist: 'Cartora Assist', cases: 'My Cases', account: 'Account' };
             const pageName = pageNames[state.currentPage] || state.currentPage;
